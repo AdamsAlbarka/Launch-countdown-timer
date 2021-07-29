@@ -1,0 +1,215 @@
+*{
+    background: url(./images/bg-stars.svg) no-repeat;
+   
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    background-color: #211D2B;
+}
+
+.mainContainer{
+    /* border: 2px solid; */
+    position: fixed;
+    top: 10%;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.soonContainer{
+    margin: auto;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.soonText{
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-stretch: extra-expanded;
+}
+.gridDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;  
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px;
+    gap: 10px;
+    margin-top: 10%;
+    margin: 0 auto;
+    /* border:1px solid red; */
+  }
+
+  .showFigures {
+    background-color:#211D2B;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 10px;
+    font-size: 30px;
+    text-align: center; 
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .showClockFigure {
+    background-color:#34364F;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding-top: 30px;
+    font-size: 50px;
+    color: #D4506F;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .showFigureTime{
+      color: #7D7992;
+      font-size: 13px;
+  }
+  
+
+.attribution{
+  margin-top:auto;
+  width: 100%;
+  font-size: 11px; 
+  text-align: center;
+  position: relative;
+}
+.series:hover .bar {
+    fill: #ec008c;
+    opacity: 1;
+}
+
+.center-fit{
+    max-width: 100%;
+    max-height: 100vh;
+}
+.textFooter{
+    display: none;
+}
+
+.textFooterimg{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    word-spacing: 20px
+}
+.attribution a{
+  color: hsl(228, 45%, 44%);
+ }
+
+ /* Media queries */
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .mainContainer{
+        /* border: 2px solid; */
+        position: fixed;
+        margin-top: 30px;
+
+    }
+    .gridDiv{
+        display: inherit;
+        /* flex-direction: column; */
+        margin: 0 auto;
+        margin-top: 40px;  
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+      }
+      /* .showFigures {
+        margin: 40px;
+      } */
+      .attribution{
+        /* border: 2px solid red; */
+        /* margin-top:auto; */
+        width: 100%;
+        height: 100%;
+        font-size: 11px; 
+        /* text-align: center; */
+        position: relative;
+      }
+    
+      .center-fit{
+        max-width: 100%;
+        height: 10rem;
+      }
+
+      .textFooterimg{
+        margin: 0 -50px;
+        word-spacing: 20px
+    }    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .mainContainer{
+        position: fixed;
+        margin-top: 30px; 
+        /* border: 2px solid red; */
+    }
+    .gridDiv{
+        display: inherit;
+        margin-top: 40px; 
+        margin: 0 30px;
+
+
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+      }
+      .showFigures {
+        margin: 20px;
+        /* border: 2px solid yellow; */
+    }
+    .attribution{
+        width: 100%;
+        height: 100%;
+        font-size: 11px; 
+        /* text-align: center; */
+        position: relative;
+      }
+    
+      .center-fit{
+        width: 100%;
+        height: 10rem;
+      }
+
+      .textFooterimg{
+        margin: 0 -50px;
+        word-spacing: 20px
+    }    
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* body {  
+        background-color: red;
+    } */
+ }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* body {  
+        background-color: yellow;
+    } */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* body {  
+        background-color: brown;
+    } */
+}
